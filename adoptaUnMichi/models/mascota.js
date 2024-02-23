@@ -17,8 +17,11 @@ const MascotaSchema = Schema({
     },
     adoptado:{
         type: String,
-        required: true,
-        enum: ["ADOPTADO", "SIN_ADOPTAR"]
+        required: [true, 'Se debe saber si la mascota fue adoptada o no']
+    },
+    estado:{
+        type: Boolean,
+        default: true
     }
 });
 

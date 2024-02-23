@@ -13,9 +13,6 @@ const UsuarioSchema = Schema ({
         type: String,
         required: [true, 'El password es obligatorio']
     },
-    img:{
-        type: String
-    },
     role:{
         type: String,
         required: true,
@@ -25,10 +22,6 @@ const UsuarioSchema = Schema ({
         type: Boolean,
         default: true
     },
-    google:{
-        type: Boolean,
-        default: false
-    }
 });
 
 /*UsuarioSchema.methods.toJSON = function(){

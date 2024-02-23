@@ -45,7 +45,7 @@ router.post(
     "/",
     [
         check("nombre", "El nombre no puede ir vacio").not().isEmpty(),
-        check("edad", "La edad no debe superar los 30 años").not().isEmpty(),
+        check("edad", "La edad es obligatoria").not().isEmpty(),
         check("clase", "Clase de animal no valida").not().isEmpty(),
         validarCampos,
     ], mascotasPost);

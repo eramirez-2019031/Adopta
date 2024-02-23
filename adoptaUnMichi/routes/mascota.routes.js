@@ -25,7 +25,7 @@ router.get(
     ], getMascotaByid);
 
 router.put(
-    "/:id",
+    "/put/:id",
     [
         check("id","El id no es un formato válido de MongoDB").isMongoId(),
         check("id").custom(existeMascotaById),

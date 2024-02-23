@@ -1,0 +1,94 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "mascotas Evan",
+    "dateExported": "2024-02-23T16:36:22.391Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "670f66a1-4a2f-424a-9f71-b6376b6d922e",
+            "colId": "5b0f27e3-c142-409a-a809-c4586d22e387",
+            "containerId": "",
+            "name": "post mascota",
+            "url": "http://localhost:3000/api/mascotas",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-23T16:27:16.466Z",
+            "modified": "2024-02-23T16:27:16.466Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Tufo\",\n  \"edad\": \"13 años\",\n  \"clase\": \"Perrito con sarna\",\n  \"adoptado\": \"ADOPTADO\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "57a7e247-014c-4590-9c60-48ddb5475a6d",
+            "colId": "5b0f27e3-c142-409a-a809-c4586d22e387",
+            "containerId": "",
+            "name": "GetMascotaById",
+            "url": "http://localhost:3000/api/mascotas/65d8c56ee7ef050a84cee095",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-23T16:27:16.467Z",
+            "modified": "2024-02-23T16:35:10.509Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fd2a5d7b-4bd8-427f-9c7b-7c04641c5e23",
+            "colId": "5b0f27e3-c142-409a-a809-c4586d22e387",
+            "containerId": "",
+            "name": "getAllMascota",
+            "url": "http://localhost:3000/api/mascotas",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-23T16:28:54.753Z",
+            "modified": "2024-02-23T16:31:43.440Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Tufo\",\n  \"edad\": \"13 años\",\n  \"clase\": \"Perrito con sarna\",\n  \"adoptado\": \"NO_ADOPTADO\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3752e735-2831-4b68-abc6-b08ffdc786b3",
+            "colId": "5b0f27e3-c142-409a-a809-c4586d22e387",
+            "containerId": "",
+            "name": "putMascota",
+            "url": "http://localhost:3000/api/mascotas/put/65d8c56ee7ef050a84cee095",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-02-23T16:33:42.706Z",
+            "modified": "2024-02-23T16:33:42.706Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Angel\",\n  \"edad\": \"15 años\",\n  \"clase\": \"Perrito con sarna\",\n  \"adoptado\": \"NO_ADOPTADO\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "40eb22ec-9579-423e-86ea-c61e5f6cdecc",
+            "colId": "5b0f27e3-c142-409a-a809-c4586d22e387",
+            "containerId": "",
+            "name": "deleteMascota",
+            "url": "http://localhost:3000/api/mascotas/65d8c56ee7ef050a84cee095",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-02-23T16:35:29.072Z",
+            "modified": "2024-02-23T16:35:29.072Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

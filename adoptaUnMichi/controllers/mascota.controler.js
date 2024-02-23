@@ -30,12 +30,12 @@ const getMascotaByid = async (req, res) => {
 
 const mascotasPut = async (req, res) => {
     const { id } = req.params;
-    const { _id, nombre, adoptado, ...resto} = req.body;
-
+    const { _id, nombre, clase, ...resto} = req.body;
+ 
     await Mascota.findByIdAndUpdate(id, resto);
-
+ 
     const mascota = await Mascota.findOne({_id: id});
-
+ 
     res.status(200).json({
         msg: 'La mascota fue actualizada correctamente',
         mascota
